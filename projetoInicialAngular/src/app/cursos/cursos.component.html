@@ -1,0 +1,12 @@
+<!-- {{}} representa uma interpolação aonde eu uso a váriavel que foi declarada no TS de component cursos -->
+<p>Lista de cursos do portal {{ nomePortal }}</p>
+
+<app-curso-detalhe></app-curso-detalhe>
+
+<ul>
+    <!-- criando variável curso para representar o array de strings do cursos.component.ts -->
+    <li *ngFor="let curso of cursos">
+        <!-- interpolação para retornar o valor que foi buscado -->
+        {{curso}}
+    </li>
+</ul>
